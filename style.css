@@ -5,24 +5,19 @@
     font-family: "Lato", sans-serif;
 }
 
-/* wrap container rules */
-
-#wrap{
+main{
     width: 100%;
-    height: 100vh;
-    margin: 10px ;
-    position: relative;
-    /* debug */
-    background-color: rgba(0, 0, 0, 0.357);
-    
+    background-color: #000;
+    height: calc(100vh - 100px);
 }
+
+
 /* container img and scroll */
 
 .flex{
     display: flex;
     justify-content: flex-end;
     gap: 10px;
-    margin-right: 10px;
     padding: 5px;
     background-color: black;
     color: white;
@@ -38,21 +33,45 @@
 
 /* main section members rules  */
 
+/* all container img description */
 .user{
-    min-width: 100%;
+    min-width: calc(100% / 7 - 20px);
     height:150px;
     position: relative;
     /* debug */
     background-color: blue;
 }
 
-.user img{
+.user  img{
     min-width: 100%;
     height: 100%;
     object-fit: cover;
     
 }
 
+/* add members propriety flex */
+
+ .members-flex {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+    
+
+
+.name *{
+    color: lightgray;
+}
+.name{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(34, 34, 34, .7);
+    padding: 5px 5px;
+}
 
 
 
